@@ -57,7 +57,6 @@ function checkAge(movie, userAge) {
     return m.title === movie;
   });
 
-  // Вся логика проверки теперь СТРОГО ВНУТРИ функции checkAge:
   if (!targetMovie) {
     return "Фильм не найден";
   } else if (userAge >= targetMovie.age) {
